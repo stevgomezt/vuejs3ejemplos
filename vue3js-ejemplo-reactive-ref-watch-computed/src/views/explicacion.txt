@@ -1,0 +1,13 @@
+<template>: Contiene la estructura visual del componente.
+
+Muestra el valor actual del contador y su cuadrado.
+Tiene botones para incrementar y decrementar el contador.
+<script setup>:
+
+import: Importa ref, computed, reactive y watch desde Vue.
+ref: contador es una referencia reactiva que almacena el valor del contador.
+computed: contadorCuadrado es una propiedad computada que calcula el cuadrado del contador.
+reactive: estado es un objeto reactivo que almacena el estado del contador.
+watch: Observa cambios en la propiedad valor de estado y actualiza contador cuando cambia.
+Funciones incrementar y decrementar: Modifican el estado del contador a través de estado.
+Con este ejemplo, cuando el usuario hace clic en los botones de incrementar o decrementar, el estado del contador se actualiza a través de estado, lo que a su vez activa el watcher que actualiza el valor del contador y su cuadrado. La propiedad computada contadorCuadrado se recalcula automáticamente cada vez que el valor del contador cambia, y se muestra en la interfaz de usuario.

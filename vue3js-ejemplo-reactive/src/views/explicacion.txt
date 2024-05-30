@@ -1,0 +1,10 @@
+<template>:
+
+Muestra el nombre y la edad del usuario.
+Un botón que, cuando se hace clic, llama a la función updateUser.
+<script setup>:
+
+Importamos reactive desde Vue.
+Creamos un objeto llamado user utilizando reactive. Este objeto es reactivo, lo que significa que sus propiedades (name y age) reaccionarán a los cambios.
+Definimos una función updateUser que actualiza las propiedades del objeto user.
+Con este ejemplo, cada vez que se haga clic en el botón "Actualizar", el nombre y la edad del usuario se cambiarán, y estos cambios se reflejarán automáticamente en la interfaz de usuario, gracias a que el objeto user es reactivo.

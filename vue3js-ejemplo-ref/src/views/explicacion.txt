@@ -1,0 +1,11 @@
+Explicación detallada:
+<template>: Define la estructura del componente.
+
+<div class="counter">: Contenedor principal con una clase counter para aplicar estilos.
+<p>: Muestra el número de clics usando la interpolación {{ count }}.
+<button @click="increment">: Botón que llama a la función increment al hacer clic.
+<script setup>: Define la lógica del componente de manera simplificada.
+
+Importación de ref: import { ref } from 'vue'; para crear una referencia reactiva.
+Referencia reactiva (count): const count = ref(0); inicializa count a 0.
+Función increment: const increment = () => { count.value++; }; incrementa el valor de count.

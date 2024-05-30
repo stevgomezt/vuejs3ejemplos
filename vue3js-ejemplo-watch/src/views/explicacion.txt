@@ -1,0 +1,12 @@
+<template>:
+
+Un campo de entrada (<input>) donde el usuario puede escribir texto.
+Un párrafo (<p>) que muestra el texto ingresado por el usuario.
+Otro párrafo que muestra la longitud del texto ingresado.
+<script setup>:
+
+Importamos ref y watch desde Vue.
+Declaramos una variable reactiva llamada userInput para almacenar el texto ingresado por el usuario.
+Declaramos otra variable reactiva llamada textLength para almacenar la longitud del texto ingresado.
+Utilizamos watch para observar cambios en userInput. Cada vez que userInput cambia, la función de callback se ejecuta y actualiza textLength con la longitud del nuevo texto.
+Con este ejemplo, cada vez que el usuario escriba algo en el campo de entrada, la longitud del texto se actualizará automáticamente en la pantalla. Esto demuestra cómo watch puede ser útil para realizar acciones específicas en respuesta a cambios en los datos reactivos.

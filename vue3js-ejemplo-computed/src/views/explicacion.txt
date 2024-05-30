@@ -1,0 +1,17 @@
+<div class="task-list">: Contenedor principal del componente con la clase task-list.
+<h1>Lista de Tareas</h1>: Encabezado del título.
+<ul> y <li>: Lista de tareas donde cada tarea es representada por un elemento de lista.
+Interpolación ({{ task.text }}): Muestra el texto de la tarea.
+Directiva v-if: Muestra "(Completada)" si la tarea está marcada como completada.
+Interpolación ({{ pendingTasksCount }}): Muestra el número de tareas pendientes.
+Evento @click: Añade una nueva tarea al hacer clic en el botón.
+
+Importaciones: Importa funciones y módulos necesarios.
+Referencias reactivas (ref): Define variables reactivas para almacenar datos.
+Propiedades computadas (computed): Calcula valores basados en otras propiedades reactivas.
+Funciones: Define métodos que manipulan el estado del componente.
+
+Importaciones: import { ref, computed } from 'vue'; importa las funciones ref y computed desde Vue.
+Referencia reactiva (tasks): const tasks = ref([...]); define una variable reactiva tasks que almacena la lista de tareas.
+Propiedad computada (pendingTasksCount): const pendingTasksCount = computed(() => { /* lógica */ }); calcula el número de tareas pendientes.
+Función addTask: const addTask = () => { /* lógica */ }; añade una nueva tarea a la lista de tareas.
